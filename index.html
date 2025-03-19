@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+</head>
+<body>
+    <h1>Advanced HTML5 Elements and Forms</h1>
+    <!-- Lists -->
+    <h2>Premier League Teams</h2>
+    <ol type="i">
+        <li>Manchester United</li>
+        <li>Manchester City</li>
+        <li>Liverpool</li>
+        <li>Arsenal</li>
+        <li>Newcastle United</li>
+    </ol><br><br>
+    <!-- Images in HTML5-->
+    <h3>An Image of a Satelite in the Space.</h3>
+    <img src="https://images.pexels.com/photos/41006/satellite-soyuz-spaceship-space-station-41006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Satelite" style="width: 300px; height: auto;">
+    <!-- Tables in HTML5-->
+    <h2>Clients</h2>
+    <table border="1">
+        <caption>Contact List</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Emails</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jose Mourinho</td>
+                <td>Fernabache</td>
+                <td>0747569284</td>
+                <td>josemourinho@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>Ruben Amorim</td>
+                <td>Manchester United FC</td>
+                <td>0795377356</td>
+                <td>amorin242@hotmail.com</td>
+            </tr>
+            <tr>
+                <td>Pep Gurdiola</td>
+                <td>Manchester City</td>
+                <td>07435875326</td>
+                <td>pepg@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Unai Emery</td>
+                <td>Aston Villa FC</td>
+                <td>016743592</td>
+                <td>emeryunai@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>Ange Postecoglou</td>
+                <td>Tottenham Hotspur FC</td>
+                <td>0734653852</td>
+                <td>angepostecoglou@outlook.com</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Forms in HTML5-->
+    <h1>Registration Here</h1>
+    <form action="#" method="POST">
+        <h2>Registration Form</h2>
+
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6"><br><br>
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        <!-- Dropdown Field -->
+        <label for="country">Select Country:</label>
+        <select id="country" name="country" required>
+            <option value="">-- Select --</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+        </select><br><br>
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <div class="gender">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+        <!-- Checkboxes -->
+        <label>Hobbies:</label>
+        <div class="hobbies">
+            <input type="checkbox" id="coding" name="hobbies" value="coding">
+            <label for="coding">Coding</label>
+
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="music" name="hobbies" value="music">
+            <label for="music">Music</label>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+    <footer>
+        Happy Coding! 💻✨
+    </footer>
+</body>
+</html>
